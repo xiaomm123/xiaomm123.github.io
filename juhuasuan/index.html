@@ -1,0 +1,469 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>juhuasuan.com</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+<link rel="stylesheet" href="css/common.css"/>
+<link rel="stylesheet" href="css/index.css" />
+<script>
+;(function(win,doc){
+	function change(){
+		document.documentElement.style.fontSize=document.documentElement.clientWidth/16+'px';
+	}
+	//DOMContentLoaded 相当于ready 
+	doc.addEventListener('DOMContentLoaded',change,false);	
+	win.addEventListener('resize',change,false);
+})(window,document);
+// 当ready 执行完 执行函数 
+document.addEventListener('DOMCntentLoaded',function(){
+	var oSec=document.querySelector('#sec');
+	var oList=document.querySelector('#list');
+	var aLi=oList.children;
+	var iNow=1;
+	var x=-iNow*aLi[0].offsetWidth;// 是平移的是多少
+	 //当前显示的是第几个
+	//加事件  给oSec加事件  为了兼容小米
+	oSec.addEventListener('touchstart',function (ev){
+		
+		if(bReady==false)return;
+		bReady=false;
+		var disX=ev.targetTouches[0].pageX-x;
+		
+		oUl.style.WebkitTransition='none';
+		var downX=ev.targetTouches[0].pageX;
+		var disX=downX-x;
+		var bReady=true;
+		
+		//move
+		 function fnMove(ev)
+		 {
+			 x=ev.targetTouches[0].pageX-disX;
+			oList.style.WebkitTransform='translate3d('+x+'px,0,0)';
+			//阻止默认样式 preventDefault  preventDrfault
+			ev.preventDefault();
+			var upX=ev.changedTouches[0].pageX;// 当手指得事件变化的时候  也就是抬起的时候
+			//判断什么时候去换图片
+			
+				if(Math.abs(upX-downX) > 50)
+				{
+					//这里才换图片
+					if(downX>upX){
+						iNow++;
+						if(iNow>=aLi.length)iNow=aLi.length-1;
+					}
+					else{
+						iNow--;	
+						if(iNow<=0)iNow=0;
+					}
+					
+				}
+				//判断完  + - 之后 图片开始运动
+				x=-iNow*aLi[0].offsetWidth;
+				oList.style.WebkitTransition='.4s all ease';
+				oList.style.WebkitTransform='translate3d('+x+'px,0,0)';
+				
+				function tEnd(){
+				bReady=true;
+				oList.removeEventListener('transitionend',tEnd,false);
+				if(iNow==aLi.length-1){
+					iNow=1;
+					x=-iNow*aLi[0].offsetWidth;
+					oList.style.WebkitTransition='none';
+					oList.style.WebkitTransform='translate3d('+x+'px,0,0)';	
+				}
+				if(iNow==0){
+					iNow=aLi.length-2;
+					x=-iNow*aLi[0].offsetWidth;
+					oList.style.WebkitTransition='none';
+					oList.style.WebkitTransform='translate3d('+x+'px,0,0)';	
+				}	
+			}
+			oList.addEventListener('transitionend',tEnd,false);
+			
+		  };
+		  
+		  //fnend  接触绑定
+		  
+		  function fnEnd()
+		  {
+			  
+			oSec.removeEventListener('touchmove',fnMove,false);
+			oSec.removeEventListener('touchend',fnEnd,false);
+			//当鼠标抬起的时候  需要换图片
+			  
+		  }
+		  
+		oSec.addEventListener('touchmove',fnMove,false);
+		oSec.addEventListener('touchend',fnEnd,false)
+		
+	},false)
+},false)
+</script>
+</head>
+
+<body>
+<div class="wrap">
+	<header>
+    	<a href="javascript:;" class="return"></a>
+        <h1 class="logo">聚划算</h1>
+    </header>
+    <section id="sec">
+    	<ul class="list clearFix" id="list">
+        	<li>
+            	<a href="javascript:;">
+                	<img src="images/banner1.png" alt="" >
+                </a>
+            </li>
+        	<li>
+            	<a href="javascript:;">
+                	<img src="images/banner1.png" alt="" >
+                </a>
+            </li>
+            <li>
+            	<a href="javascript:;">
+                	<img src="images/banner1.png" alt="" >
+                </a>
+            </li>
+            <li>
+            	<a href="javascript:;">
+                	<img src="images/banner1.png" alt="" >
+                </a>
+            </li>
+            <li>
+            	<a href="javascript:;">
+                	<img src="images/banner1.png" alt="" >
+                </a>
+            </li>
+            <li>
+            	<a href="javascript:;">
+                	<img src="images/banner1.png" alt="" >
+                </a>
+            </li>
+            <li>
+            	<a href="javascript:;">
+                	<img src="images/banner1.png" alt="" >
+                </a>
+            </li>
+        </ul>
+    </section>
+    <div class="btn_box clearFix">
+        	<span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+     </div>
+    <div class="nav">
+    	<ul class="clearFix">
+        	<li class="li1">
+            	<div></div>
+                <a href="javascript:;">商品</a>
+            </li>
+            <li class="li1">
+            	<div></div>
+                <a href="javascript:;">商品</a>
+            </li>
+            <li class="li1">
+            	<div></div>
+                <a href="javascript:;">商品</a>
+            </li>
+            <li class="li1">
+            	<div></div>
+                <a href="javascript:;">商品</a>
+            </li>
+           
+        </ul>
+        <ul class="clearFix">
+        	<li class="li1">
+            	<div></div>
+                <a href="javascript:;">商品</a>
+            </li>
+            <li class="li1">
+            	<div></div>
+                <a href="javascript:;">商品</a>
+            </li>
+            <li class="li1">
+            	<div></div>
+                <a href="javascript:;">商品</a>
+            </li>
+            <li class="li1">
+            	<div></div>
+                <a href="javascript:;">商品</a>
+            </li>
+           
+        </ul>
+    </div>
+    
+    <div class="top">
+    	<div class="title clearFix">
+        	<h2 class="fl">聚划算热卖排行</h2>
+            <span class="fr"></span>
+        </div>
+        <div class="content">
+        	<ul>
+            	<li>
+                	<h2>1</h2>
+                    <img class="fl" src="images/img2.jpg" alt="" >
+                    <div class="fl details clearFix">
+                    	<div class="fl">
+                        	<p>已售10000件</p>
+                            <p><i>2.0折</i> <em>￥200</em></p>
+                        </div>
+                        <p class="fr">￥00<a href="javascript:;"><</a></p>
+                    </div>
+                </li>
+                <li>
+                	<h2>1</h2>
+                    <img class="fl" src="images/img2.jpg" alt="" >
+                    <div class="fl details clearFix">
+                    	<div class="fl">
+                        	<p>已售10000件</p>
+                            <p><i>2.0折</i> <em>￥200</em></p>
+                        </div>
+                        <p class="fr">￥00<a href="javascript:;"><</a></p>
+                    </div>
+                </li>
+                <li>
+                	<h2>1</h2>
+                    <img class="fl" src="images/img2.jpg" alt="" >
+                    <div class="fl details clearFix">
+                    	<div class="fl">
+                        	<p>已售10000件</p>
+                            <p><i>2.0折</i> <em>￥200</em></p>
+                        </div>
+                        <p class="fr">￥00<a href="javascript:;"><</a></p>
+                    </div>
+                </li>
+                <li>
+                	<h2>1</h2>
+                    <img class="fl" src="images/img2.jpg" alt="" >
+                    <div class="fl details clearFix">
+                    	<div class="fl">
+                        	<p>已售10000件</p>
+                            <p><i>2.0折</i> <em>￥200</em></p>
+                        </div>
+                        <p class="fr">￥00<a href="javascript:;"><</a></p>
+                    </div>
+                </li>
+                <li>
+                	<h2>1</h2>
+                    <img class="fl" src="images/img2.jpg" alt="" >
+                    <div class="fl details clearFix">
+                    	<div class="fl">
+                        	<p>已售10000件</p>
+                            <p><i>2.0折</i> <em>￥200</em></p>
+                        </div>
+                        <p class="fr">￥00<a href="javascript:;"><</a></p>
+                    </div>
+                </li>
+                <li>
+                	<h2>1</h2>
+                    <img class="fl" src="images/img2.jpg" alt="" >
+                    <div class="fl details clearFix">
+                    	<div class="fl">
+                        	<p>已售10000件</p>
+                            <p><i>2.0折</i> <em>￥200</em></p>
+                        </div>
+                        <p class="fr">￥00<a href="javascript:;"><</a></p>
+                    </div>
+                </li>
+                <li>
+                	<h2>1</h2>
+                    <img class="fl" src="images/img2.jpg" alt="" >
+                    <div class="fl details clearFix">
+                    	<div class="fl">
+                        	<p>已售10000件</p>
+                            <p><i>2.0折</i> <em>￥200</em></p>
+                        </div>
+                        <p class="fr">￥00<a href="javascript:;"><</a></p>
+                    </div>
+                </li>
+                <li>
+                	<h2>1</h2>
+                    <img class="fl" src="images/img2.jpg" alt="" >
+                    <div class="fl details clearFix">
+                    	<div class="fl">
+                        	<p>已售10000件</p>
+                            <p><i>2.0折</i> <em>￥200</em></p>
+                        </div>
+                        <p class="fr">￥00<a href="javascript:;"><</a></p>
+                    </div>
+                </li>
+                <li>
+                	<h2>1</h2>
+                    <img class="fl" src="images/img2.jpg" alt="" >
+                    <div class="fl details clearFix">
+                    	<div class="fl">
+                        	<p>已售10000件</p>
+                            <p><i>2.0折</i> <em>￥200</em></p>
+                        </div>
+                        <p class="fr">￥00<a href="javascript:;"><</a></p>
+                    </div>
+                </li>
+                <li>
+                	<h2>1</h2>
+                    <img class="fl" src="images/img2.jpg" alt="" >
+                    <div class="fl details clearFix">
+                    	<div class="fl">
+                        	<p>已售10000件</p>
+                            <p><i>2.0折</i> <em>￥200</em></p>
+                        </div>
+                        <p class="fr">￥00<a href="javascript:;"><</a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="menu">
+    	<h3>更多划算  逛起来！</h3>
+        <div class="menu_box clearFix">
+        	<div class="fl">
+            	<img src="images/intro_24.png" alt="" >
+            </div>
+            <ul class="fl">
+            	<li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="menu">
+    	<h3>更多划算  逛起来！</h3>
+        <div class="menu_box clearFix">
+        	<div class="fl">
+            	<img src="images/intro_24.png" alt="" >
+            </div>
+            <ul class="fl">
+            	<li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="menu">
+    	<h3>更多划算  逛起来！</h3>
+        <div class="menu_box clearFix">
+        	<div class="fl">
+            	<img src="images/intro_24.png" alt="" >
+            </div>
+            <ul class="fl">
+            	<li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+                <li>
+                	<a href="javascript:;">服饰</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="menu">
+    	<h3>更多划算  逛起来！</h3>
+        <ul class="ul1 clearFix">
+        	<li>
+                <p></p>
+                <span>ios客户端</span></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

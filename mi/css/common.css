@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+/*清除默认样式*/
+h1,h2,h3,h4,h5,h6,p,ul,li,ol,dl,dt,dd,a,i,em,b,strong,img,input,body{ margin:0; padding:0;}
+li{ list-style:none;}
+a{ text-decoration:none; color:#8c8c8c;}
+i,em{ font-style:normal;}
+b,strong{ font-weight:normal;}
+input{ border:none; background:none; outline:none;}
+textarea{ outline:none; resize:none;}
+img,input,select{ vertical-align:top;}
+/*清除默认样式*/
+
+/*公用部分*/
+.clearFix:after{ content:''; clear:both; display:block;}
+.clearFix{ zoom:1;}
+.fl{ float:left; display:inline;}
+.fr{ float:right; display:inline;}
+
+
+/*公用部分*/
+
+.wrap{ width:1240px; margin:0 auto;}
+body{ font-size:12px; margin-bottom:300px;}
+.main_left .w992px{ width:992px; height:420px;}
+.main_left_top .w619px{ width:619px; height:319px;}
+.main_left_top .w619px img{ margin-top:0; margin-left:0;}
+.main_left .h154px{ height:154px;}
+.main_left .w135{ width:135px; height:135px;}
+.main .main_left .h309px{ height:308px;}
+a img{ border:none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

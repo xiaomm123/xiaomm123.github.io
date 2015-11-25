@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+/*清除默认样式*/
+h1,h2,h3,h4,h5,h6,p,ul,li,ol,dl,dt,dd,a,i,em,b,strong,img,input,body{ margin:0; padding:0;}
+li{ list-style:none;}
+a{ text-decoration:none; color:#333;}
+i,em{ font-style:normal;}
+b,strong{ font-weight:normal;}
+input{ border:none; background:none; outline:none;}
+textarea{ outline:none; resize:none;}
+img,input,select{ vertical-align:top;}
+/*清除默认样式*/
+
+/*公用部分*/
+.clearFix:after{ content:''; clear:both; display:block;}
+.clearFix{ zoom:1;}
+.fl{ float:left; display:inline;}
+.fr{ float:right; display:inline;}
+body{ background:#fbfbfb; font-size:14px; color:#333; font-family:\5B8B\4F53; margin-bottom:1000px;}
+
+/*公用部分*/
+.wrap{ width:1000px; margin:0 auto;}
+.mb{ margin-bottom:10px;}
+.h248px{ height:248px;}
+.h185px{ height:185px;}
+.h262px{ height:261px;}
+.h48{ height:48px;}
+.colorf60{ color:#ff6600;}
+.color10b606{ color:#10b606;}
+.bull .color5382b6{ background:#5382b6;}
+
+.w103{ width:103px;}
+.w104{ width:104px;}
+.w58{ width:58px;}
+.w53{ width:53px;}
+.w50{ width:50px;}
+.mrg26px{ margin-left:26px;}
+
+
+
+
+
+
+
+
+
+

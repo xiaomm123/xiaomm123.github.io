@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+.footer{ margin-top:65px; height:537px; background:#fafafa;}
+.footer_box .footer_box_top li{ width:1240px; border-bottom:1px solid #dfdfdf;}
+.footer_box .footer_box_top li a{ width:248px; display:block; background:url(../images/icon1.png) no-repeat center top; padding-top:65px; text-align:center; float:left; margin-top:47px; margin-bottom:46px; font-size:18px; color:#000;}
+.footer_box .footer_box_top li a:hover{ color:#ff4a00;}
+.footer_box_top_c{ width:165px; padding-left:30px; border-left:1px solid #dfdfdf; height:138px; margin:40px 0;}
+.footer_box_top_c dt{ font-size:18px; color:#333; line-height:30px; margin-bottom:5px;}
+.footer_box_top_c dd{ font-size:12px; color:#6d6d6d; line-height:27px;}
+.footer_box_top_c_box{ margin-left:-31px;}
+.footer_box_top_c_box_h{ overflow:hidden; border-bottom:1px solid #dfdfdf;}
+.footer_box .last{width:260px; text-align:center;}
+.footer_box_top_c dd a:hover{color:#ff4a00;}
+.last .last_a{ width:120px; height:30px; background:#ff4a00; display:block; margin-left:65px; color:#fff;}
+.last .last_a:hover{ background:#ee330a; color:#fff;}
+.footer_box .last dt{ font-size:19px; color:#000; font-weight:bold;}
+.footer_box__b{ text-align:center; margin-top:39px;}
+.footer_box__b p{ margin-bottom:9px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1454 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>hao360</title>
+<script>
+window.onload=function (){
+	var oNav=document.getElementById('nav');
+	var aLi=oNav.getElementsByTagName('li');
+	var aXxk=oNav.getElementsByTagName('xxk');
+	for(i=0;i<aLi.length; i++){
+		<!--aLi[i].index=i;-->
+		aLi[i].onclick=function (){
+			for(i=0; i<aLi.length; i++){
+				aLi[i].className='';
+				<!--aXxk[i].style.display='none';-->
+				};
+			this.className='ctive';
+			<!--aXxk[this.index].style.display='block'-->
+			};
+		};
+};
+	
+</script>
+<link href="css/common.css"  rel="stylesheet" type="text/css"/>
+<link href="css/header.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<!--头部开始-->
+<div class="header">
+	<div class="column">
+    	<div class="wrap clearFix">
+        	<div class="fl column_left">
+            	<a href="javascript">设为主页</a>
+                <b>|</b>
+                <a href="javascript">主页修复</a>
+            </div>
+            <div class="fl column_center clearFix">
+                    <span class="fl">超速上网，加速下载</span><a class="fl" href="#">立即下载</a>
+                </div>
+            <div class="fr column_right clearFix">
+            	<a class="fl clearFix" href="#"><i class="i1 fl"></i><span>我的云盘</span></a>
+                <a class="fl clearFix"href="#"><i class="i2 fl"></i><span>反馈</span></a>
+                <a class="fl clearFix" href="#"><i class="i3 fl"></i><span>正式版</span></a>
+                <a class="fl clearFix" href="#"><i class="i4 fl"></i><span>换肤</span></a>
+            </div>
+        </div>
+    </div>	
+     <div class="logotit wrap clearFix">
+    <div class="log clearFix">
+    	<h1 class="fl">hao360</h1>
+        <div class="address fl">
+        	<strong>北京</strong>
+            <span>[切换]</span>
+        </div>
+        <div class="todayweather fl">
+        	<img src="img/1.jpg" alt="" />
+        </div>
+         <div class="tomorrowweather fl">
+        	<img src="img/2.jpg" alt="" />
+        </div>
+        <div class="time fl">
+        	<p>6月5日周三</p>
+            <span>四月二十七</span>
+        </div>
+        <div class="login fl">
+        	<p>笑话：名叫备胎的人</p>
+            <input type="text" value="邮箱账号"/>
+        </div>
+    </div>
+    </div>
+</div>
+	<div class="navsearch">
+		<ul class="clearFix nav">
+            <li class="fl active">网页</li>
+            <li class="fl">新闻</li>
+            <li class="fl">视频</li>
+            <li class="fl">图片</li>
+            <li class="fl">音乐</li>
+            <li class="fl">微博</li>
+            <li class="fl">地图</li>
+            <li class="fl">问答</li>
+            <li class="fl">购物</li>
+            <li class="fl">机票</li>
+            <li class="fl">汽车</li>
+        </ul>
+    	<div class="search">
+            <input type="text" class="text" />
+            <input type="submit" class="sub" value="搜索一下" />
+            <a href="#">连衣裙1折</a>
+        </div>
+     </div>
+</div>
+<!--头部结束-->
+<!--menu开始-->
+<div class="menu_box wrap">
+<ul class="menu  clearFix">
+	<li class="index li1">
+    	<a href="#">我的注册</a>
+    </li>
+    <li class="li2">
+    	<a href="#">新闻头条</a>
+    </li>
+    <li class="li3">
+    	<a href="#">电视剧</a>
+    </li>
+    <li class="li4">
+    	<a href="#">最新电影</a>
+    </li>
+    <li class="li5">
+    	<a href="#">小游戏</a>
+    </li>
+    <li class="li6">
+    	<a href="#">小说大全</a>
+    </li>
+    <li class="li7">
+    	<a href="#">旅游度假</a>
+    </li>
+    <li class="li8">
+    	<a href="#">正品购物</a>
+    </li>
+    <li class="li9">
+    	<a href="#">今日团购</a>
+    </li>
+</ul>
+</div>
+<!--menu结束-->
+<!--内容-->
+<div class="content wrap clearFix">
+	<div class="cont_left fl">
+    	<a class="mb" href="#"><img class="cont_left_topimg" src="img/a.jpg" alt="" /></a>
+  		<ul class="service">
+        	<li class="service_li1 fl">
+            	<a href="#">新闻</a><span class="dd"></span><a href="#">娱乐</a>
+            </li>
+            <li class="service_li2 fl">
+            	<a href="#">电影</a><span class="dd"></span><a href="#">电视剧</a>
+            </li>
+            <li class="service_li3 fl">
+            	<a href="#">今日团购</a>
+              </li>
+            <li class="service_li4 fl">
+            	<a href="#">彩票</a><span class="dd"></span><a href="#">双色球</a>
+            </li>
+            <li class="service_li5 fl">
+            	<a href="#">购物</a><span class="dd"></span><a href="#">逛女装</a>
+            </li>
+            <li class="service_li6 fl">
+            	<a href="#">音乐</a><span class="dd"></span><a href="#">小说</a>
+            </li>
+            <li class="service_li7 fl">
+            	<a href="#">游戏</a><span class="dd"></span><a href="#">棋牌</a>
+            </li>
+            <li class="service_li8 fl">
+            	<a href="#">星座</a><span class="dd"></span><a href="#">美食</a>
+            </li>
+             <li class="service_li9 fl">
+            	<a href="#">查询</a><span class="dd"></span><a href="#">火车票</a>
+            </li>
+             <li class="service_li10 fl">
+            	<a href="#">机票</a><span class="dd"></span><a href="#">酒店</a>
+            </li>
+        </ul>
+  	     <div class="cont_left_box mb">
+         <div class="cont_left_box_hd clearFix">
+            <a class="fl" href="#">猜你爱看</a>
+            <span class="fr">换一下</span>
+         </div>
+        <div class="h248px">
+         	<ul class="cont_left_box_nav clearFix" id="nav">
+                <li class="ctive">新闻</li>
+                <li>八卦</li>
+                <li>情感</li>
+                <li>军事</li>
+            </ul>
+             <div class="xxk" style=" display:block;">
+                <a href="#" class="cont_left_box_img">
+                <img src="img/pic3.jpg" alt="" />
+                <div class="pos"></div>
+                <p class="pos_p">全国聘礼地图：山东3斤百元大钞</p>
+             </a>
+             <ul class="cont_left_boxlist">
+                <li><a href="javascript">延安城管30层高办公楼遭</a>曝光</li>
+                <li><a href="javascript">粤25岁女干部破格提拔被</a>终止</li>
+                <li><a href="javascript">河南持枪打人副局长悄获释</a></li>
+                <li><a href="javascript">吉林大火事故仍有17人失踪</a></li>
+             </ul>
+             </div>
+             <div class="xxk">
+                <a href="#" class="cont_left_box_img">
+                    <img src="img/pic4.jpg" alt="" />
+                    <div class="pos"></div>
+                    <p class="pos_p">全国聘礼地图：山东3斤百元大钞</p>
+                 </a>
+                 <ul class="cont_left_boxlist">
+                    <li><a href="javascript">延安城管30层高办公楼遭</a>曝光</li>
+                    <li><a href="javascript">粤25岁女干部破格提拔被</a>终止</li>
+                    <li><a href="javascript">河南持枪打人副局长悄获释</a></li>
+                    <li><a href="javascript">吉林大火事故仍有17人失踪</a></li>
+                 </ul>
+             </div>
+                 <div class="xxk">
+                    <a href="#" class="cont_left_box_img">
+                    <img src="img/pic3.jpg" alt="" />
+                    <div class="pos"></div>
+                    <p class="pos_p">全国聘礼地图：山东3斤百元大钞</p>
+                 </a>
+                 <ul class="cont_left_boxlist">
+                    <li><a href="javascript">延安城管30层高办公楼遭</a>曝光</li>
+                    <li><a href="javascript">粤25岁女干部破格提拔被</a>终止</li>
+                    <li><a href="javascript">河南持枪打人副局长悄获释</a></li>
+                    <li><a href="javascript">吉林大火事故仍有17人失踪</a></li>
+                 </ul>
+                 </div>
+             <div class="xxk">
+                 <a href="#" class="cont_left_box_img">
+                    <img src="img/pic4.jpg" alt="" />
+                    <div class="pos"></div>
+                    <p class="pos_p">全国聘礼地图：山东3斤百元大钞</p>
+                 </a>
+                 <ul class="cont_left_boxlist">
+                    <li><a href="javascript">延安城管30层高办公楼遭</a>曝光</li>
+                    <li><a href="javascript">粤25岁女干部破格提拔被</a>终止</li>
+                    <li><a href="javascript">河南持枪打人副局长悄获释</a></li>
+                    <li><a href="javascript">吉林大火事故仍有17人失踪</a></li>
+                 </ul>
+             </div>
+         </div>
+         <div class="h185px">
+            <ul class="cont_left_box_nav clearFix" id="nav">
+                <li class="ctive">影视</li>
+                <li>电视剧</li>
+                <li>电影</li>
+                <li>花边</li>
+            </ul>
+             <div class="cont_left_box_nav_pic clearFix">
+             	<a class="fl pic_box" href="javascript">
+                	<img src="img/pic5.jpg" alt="" />
+                    <div class="pos"></div>
+                    <p class="pos_p">爱在春天</p>
+                </a>
+                <a class="fr pic_box" href="javascript">
+                	<img src="img/pic6.jpg" alt="" />
+                    <div class="pos"></div>
+                    <p class="pos_p">爱在春天</p>
+                </a>
+             </div>
+            <ul class="cont_left_banner">
+            	<li><a href="javascript">青春荷尔蒙</a></li>
+                <li><a href="javascript">三俗大湿作品</a></li>
+                <li><a href="javascript">断奶[佟丽娅]</a></li>
+                <li><a href="javascript">上阵父子兵</a></li>
+                <li><a class="colorf60" href="javascript">24秒洗劫10万</a></li>
+                <li><a href="javascript">综艺尺度大开</a></li>
+                
+            </ul>
+         </div>
+         <div class="h185">
+            <ul class="cont_left_box_nav clearFix" id="nav">
+                <li class="ctive">购物</li>
+                <li>鞋包</li>
+                <li>数码</li>
+                <li>女装</li>
+            </ul>
+            <div class="san_pic clearFix">
+            	<a class="fl" href="javascript"><img src="img/pic7.jpg" alt="" /></a>
+                <a class="fl" href="javascript"><img src="img/pic8.jpg" alt="" /></a>
+                <a class="fl" href="javascript"><img src="img/pic9.jpg" alt="" /></a>
+            </div>
+            <ul class="san_pic_banner clearFix">
+            	<li><a href="javascript">女装</a></li>
+                <li><a href="javascript">化妆品</a></li>
+                <li><a href="javascript">女鞋</a></li>
+                <li><a href="javascript">手机数码</a></li>
+                <li><a href="javascript">母婴</a></li>
+                <li><a href="javascript">更多</a></li>
+            </ul>
+         </div>
+         <div class="h185px">
+            <ul class="cont_left_box_nav clearFix" id="nav">
+                <li class="ctive">游戏</li>
+                <li>最好玩</li>
+                <li>美女</li>
+                <li>小游戏</li>
+            </ul>
+             <div class="cont_left_box_nav_pic clearFix">
+             	<a class="fl pic_box" href="javascript">
+                	<img src="img/c2.jpg" alt="" />
+                    <div class="pos"></div>
+                    <p class="pos_p">光头强逆袭</p>
+                </a>
+                <a class="fr pic_box" href="javascript">
+                	<img src="img/c3.jpg" alt="" />
+                    <div class="pos"></div>
+                    <p class="pos_p">巴拉拉小魔仙</p>
+                </a>
+             </div>
+            <ul class="cont_left_banner pic_dd clearFix">
+            	<li><a href="javascript">青春荷尔蒙</a></li>
+                <li><a href="javascript">三俗大湿作品</a></li>
+                <li><a href="javascript">断奶[佟丽娅]</a></li>
+                <li><a href="javascript">上阵父子兵</a></li>
+                <li><a class="colorf60" href="javascript">24秒洗劫10万</a></li>
+                <li><a href="javascript">综艺尺度大开</a></li>
+                
+            </ul>
+         </div>
+         <div class="h261px">
+             <ul class="cont_left_box_nav clearFix" id="nav">
+                    <li class="ctive">双色球</li>
+                    <li>大乐透</li>
+                    <li>3D</li>
+                    <li>11选5</li>
+              </ul>
+             <div class="bull clearFix">
+              		<span class="fl">01</span>
+                    <span class="fl">22</span>
+                    <span class="fl">24</span>
+                    <span class="fl">29</span>
+                    <span class="fl">27</span>
+                    <span class="fl">04</span>
+                    <span class="fl color5382b6">12</span>
+              </div>
+              <div class=" clearFix timing">
+                  <p class="fl ">20170708期</p>
+                  <a class="fl aa" href="javascript">看走势图</a>
+                  <a class="fl" href="javascript">抢红包</a>
+              </div>
+              <ul class="clearFix list_box pic_dd">
+              	<li class="fl">
+                    <a href="javascript">试试手气</a>
+                    <b>|</b>
+                    <a class="colorf60" href="javascript">福地曝940万巨奖</a>
+                </li>
+                <li class="fl">
+                    <a href="javascript">试试手气</a>
+                    <b>|</b>
+                    <a href="javascript">福地曝940万巨奖</a>
+                </li>
+              </ul>
+             <div class="input_box">
+              	<div class="input_box_hd clearFix">
+                	<h2 class="fl">手机充值</h2>
+                    <a href="javascript" class="fr">
+                    	机票|点卡
+                    </a>
+                </div>
+                <input type="text" class="text1" placeholder="请输入手机号" />
+                <select>
+                	<option>100元</option>
+                </select>
+                <input type="submit" value="充值" class="submit" />
+              </div>
+         </div>
+    </div>
+    	<div class="cont_left_b">
+        	<a href="javascript">高考</a>
+            <b>|</b>
+            <a href="javascript">2015高考作文题目预测</a>
+        </div>
+   </div>
+    <!--右侧-->
+   <div class="content_right fr">
+   			 <div class="content_right_list">
+        	<ul class="clearFix ul1">
+            	<li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                
+            </ul>
+           <p class="border"></p>
+            <ul class="clearFix ul2">
+            	<li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+              	 <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+                <li>
+                	<a href="javascript">百度</a><span>·</span><a href="javascript">贴吧</a>
+                </li>
+              </ul>
+          <p class="border"></p>
+            <div class="box_list_box">
+                   <div class="box_list clearFix">
+                       <div class="list_left fl">
+                            <div class="list_left_tit clearFix">
+                                <a class="fl active" href="#">团购促销</a>
+                                <b class="fl">|</b>
+                                <a class="fl" href="#">科技数码</a>
+                            </div>
+                            <div class="list_left_bottom">
+                                <a href="#">美食聚餐1-3折</a>
+                                <a href="#">20元团电影票</a>
+                                <a href="#">美食聚餐1-3折</a>
+                                <a href="#">美食聚餐1-3折</a>
+                            </div>
+                       </div>
+                        <div class="list_center fl">
+                            <div class="list_left_tit clearFix">
+                                <a class="fl active" href="#">团购促销</a>
+                                <b class="fl">|</b>
+                                <a class="fl" href="#">科技数码</a>
+                            </div>
+                            <div class="list_left_bottom">
+                                <a href="#">美食聚餐1-3折</a>
+                                <a href="#">20元团电影票</a>
+                                <a href="#">美食聚餐1-3折</a>
+                                <a href="#">美食聚餐1-3折</a>
+                            </div>
+                       </div>
+                       <div class="list_right fl">
+                            <div class="list_left_tit clearFix">
+                                <a class="fl active" href="#">团购促销</a>
+                                <b class="fl">|</b>
+                                <a class="fl" href="#">科技数码</a>
+                            </div>
+                            <div class="list_left_bottom">
+                                <a href="#">美食聚餐1-3折</a>
+                                <a href="#">20元团电影票</a>
+                                <a href="#">美食聚餐1-3折</a>
+                                <a href="#">美食聚餐1-3折</a>
+                            </div>
+                       </div>
+                    </div>
+               </div>
+              
+        </div>
+         <!--第1部分结束-->
+             <div class="banner">
+               		<a href="#">1号店超市</a>
+                    <a href="#">京东商城</a>
+                    <a href="#">优购网</a>
+                    <a href="#">1号店超市</a>
+                    <a href="#">1号店超市</a>
+                    <a href="#">1号店超市</a>
+                    <a href="#">京东商城</a>
+                    <a href="#">优购网</a>
+                    <a href="#">1号店超市</a>
+               </div>
+          <!--第二部分开始-->
+             <div class="content_right_cont">
+          		<ul class="content_right_cont_hd clearFix">
+                	<li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                        
+                    </li>
+                    <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                        
+                    </li>
+                    <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                      <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                      <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                      <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                      <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                      <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                      <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                      <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                   
+                </ul>
+               	<div class="dl_box">
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+          </div>
+          		<ul class="content_right_cont_hd clearFix">
+                	<li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                        
+                    </li>
+                    <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                        
+                    </li>
+                    <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                      <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                      <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                      <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                      <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                      <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                      <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                      <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                   
+                </ul>
+               	<div class="dl_box">
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+               
+          </div>
+          		<ul class="content_right_cont_hd clearFix">
+                	<li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                        
+                    </li>
+                    <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                        
+                    </li>
+                    <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                      <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                      <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                      <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                      <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                      <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                      <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                      <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                   
+                </ul>
+               	<div class="dl_box">
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+               
+          </div>
+         	    <ul class="content_right_cont_hd clearFix">
+                	<li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                        
+                    </li>
+                    <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                        
+                    </li>
+                    <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                      <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                      <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                      <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                      <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                      <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                      <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                      <li class="clearFix">
+                   		 <span class="fl"></span>
+                    	<a class="fl" href="#">游戏</a>
+                     </li>
+                   
+                </ul>
+                 <div class="dl_box">
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+                <dl class="clearFix">
+                	<dt class="fl">页游</dt>
+                    <dd class="fl w103">街机三国</dd>
+                    <dd class="fl w104">龙将2</dd>
+                    <dd class="fl w104">大将军</dd>
+                    <dd class="fl w104">创世三国</dd>
+                    <dd class="fl w103">烈火战神</dd>
+                    <dd class="fl w104">霸域</dd>
+                    <dd class="fr w58">更多》</dd>
+                </dl>
+              </div>
+          	</div>
+   </div>
+		
+</div>
+<!--下一部分-->
+
+<div class="contain">
+	<div class="contain_top clearFix">
+    	<ul class="clearFix">
+        	<li class="fl w53 bg">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+             <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+        </ul>
+        <ul class="clearFix">
+        	<li class="fl w53 bg">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a class="colorf60" href="#">新闻</a>
+            </li>
+             <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+        </ul>
+        <ul class="clearFix">
+        	<li class="fl w53 bg">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+             <li class="fl w50">
+            	<a class="color10b606" href="#">新闻</a>
+            </li>
+        </ul>
+        <ul class="clearFix">
+        	<li class="fl w53 bg">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+             <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+        </ul>
+        <ul class="clearFix">
+        	<li class="fl w53 bg">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+             <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+        </ul>
+        <ul class="clearFix">
+        	<li class="fl w53 bg">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+             <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+        </ul>
+        <ul class="clearFix">
+        	<li class="fl w53 bg">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+             <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+        </ul>
+        <ul class="clearFix">
+        	<li class="fl w53 bg">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+             <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+        </ul>
+        <ul class="clearFix">
+        	<li class="fl w53 bg">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+             <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+        </ul>
+        <ul class="clearFix">
+        	<li class="fl w53 bg">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+             <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+        </ul>
+        <ul class="clearFix">
+        	<li class="fl w53 bg">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+             <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+        </ul>
+        <ul class="clearFix">
+        	<li class="fl w53 bg">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+             <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+        </ul>
+        <ul class="clearFix">
+        	<li class="fl w53 bg">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+             <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+        </ul>
+        <ul class="clearFix">
+        	<li class="fl w53 bg">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+             <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+        </ul>
+        <ul class="clearFix">
+        	<li class="fl w53 bg">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+             <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+        </ul>
+        <ul class="clearFix">
+        	<li class="fl w53 bg">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+             <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+        </ul>
+        <ul class="clearFix">
+        	<li class="fl w53 bg">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+             <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+        </ul>
+        <ul class="clearFix">
+        	<li class="fl w53 bg">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+             <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+        </ul>
+        <ul class="clearFix">
+        	<li class="fl w53 bg">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+             <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+        </ul>
+        <ul class="clearFix">
+        	<li class="fl w53 bg">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+            <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+             <li class="fl w50">
+            	<a href="#">新闻</a>
+            </li>
+        </ul>
+    </div>
+    <div class="contain_bottom">
+    	<dl class="clearFix">
+        	<dt class="fl">实用查询</dt>
+            <dd class="fl mrg26px"><a href="#">彩票开奖</a></dd>
+            <dd class="fl"><a href="#">彩票开奖</a></dd>
+            <dd class="fl mrg26px"><a href="#">彩票开奖</a></dd>
+            <dd class="fl"><a href="#">彩票开奖</a></dd>
+            <dd class="fl mrg26px"><a class="colorf60" href="#">彩票开奖</a></dd>
+            <dd class="fl"><a href="#">彩票开奖</a></dd>
+            <dd class="fl mrg26px"><a href="#">彩票开奖</a></dd>
+            <dd class="fl"><a href="#">彩票开奖</a></dd>
+            <dd class="fl mrg26px"><a href="#">彩票开奖</a></dd>
+            <dd class="fl"><a href="#">彩票开奖</a></dd>
+        </dl>
+        <dl class="clearFix">
+        	<dt class="fl">实用查询</dt>
+            <dd class="fl mrg26px"><a href="#">彩票开奖</a></dd>
+            <dd class="fl"><a href="#">彩票开奖</a></dd>
+            <dd class="fl mrg26px"><a href="#">彩票开奖</a></dd>
+            <dd class="fl"><a href="#">彩票开奖</a></dd>
+            <dd class="fl mrg26px"><a href="#">彩票开奖</a></dd>
+            <dd class="fl"><a href="#">彩票开奖</a></dd>
+            <dd class="fl mrg26px"><a href="#">彩票开奖</a></dd>
+            <dd class="fl"><a href="#">彩票开奖</a></dd>
+            <dd class="fl mrg26px"><a href="#">彩票开奖</a></dd>
+            <dd class="fl"><a class="color10b606" href="#">彩票开奖</a></dd>
+        </dl>
+        <dl class="clearFix">
+        	<dt class="fl">实用查询</dt>
+            <dd class="fl mrg26px"><a href="#">彩票开奖</a></dd>
+            <dd class="fl"><a href="#">彩票开奖</a></dd>
+            <dd class="fl mrg26px"><a href="#">彩票开奖</a></dd>
+            <dd class="fl"><a href="#">彩票开奖</a></dd>
+            <dd class="fl mrg26px"><a href="#">彩票开奖</a></dd>
+            <dd class="fl"><a href="#">彩票开奖</a></dd>
+            <dd class="fl mrg26px"><a href="#">彩票开奖</a></dd>
+            <dd class="fl"><a href="#">彩票开奖</a></dd>
+            <dd class="fl mrg26px"><a href="#">彩票开奖</a></dd>
+            <dd class="fl"><a href="#">彩票开奖</a></dd>
+        </dl>
+        <dl class="clearFix">
+        	<dt class="fl">实用查询</dt>
+            <dd class="fl mrg26px"><a href="#">彩票开奖</a></dd>
+            <dd class="fl"><a href="#">彩票开奖</a></dd>
+            <dd class="fl mrg26px"><a href="#">彩票开奖</a></dd>
+            <dd class="fl"><a href="#">彩票开奖</a></dd>
+            <dd class="fl mrg26px"><a href="#">彩票开奖</a></dd>
+            <dd class="fl"><a href="#">彩票开奖</a></dd>
+            <dd class="fl mrg26px"><a href="#">彩票开奖</a></dd>
+            <dd class="fl"><a href="#">彩票开奖</a></dd>
+            <dd class="fl mrg26px"><a href="#">彩票开奖</a></dd>
+            <dd class="fl"><a href="#">彩票开奖</a></dd>
+        </dl>
+    </div>
+</div>
+<!--终于到footer-->
+<div class="footer">
+	<ul>
+    	<li>
+        	<a href="#">关于我们</a><a href="#">关于我们</a><a href="#">关于我们</a><a href="#">关于我们</a><a href="#">关于我们</a><a href="#">关于我们</a>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

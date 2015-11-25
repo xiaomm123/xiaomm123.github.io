@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+div{
+	width:640px;
+	height:378px;
+	margin:100px auto;
+	position:relative;
+	top:0;
+	left:0;
+}
+#lt{
+	width:320px;
+	height:378px;
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+}
+#rt{
+	width:320px;
+	height:378px;
+	display:block;
+	position:absolute;
+	top:0;
+	right:0;
+}

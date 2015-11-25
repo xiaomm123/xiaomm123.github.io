@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author">
+<meta name="copyright">
+<title></title>
+<script>
+window.onload=function (){
+	var aImg=document.getElementsByTagName('img');
+	tick();
+	setInterval(tick,1000)
+	
+	function toDub(n){
+		return n<10?'0'+n: ''+n;
+	}
+	
+	function tick(){
+		var oDate=new Date();
+		var year=oDate.getFullYear();
+		var month=oDate.getMonth();
+		var date=oDate.getDate();
+		var h=oDate.getHours();
+		var m=oDate.getMinutes();
+		var s=oDate.getSeconds();
+		var str=year+toDub(month+1)+toDub(date)+toDub(h)+toDub(m)+toDub(s);
+		for(var i=0; i<aImg.length;i++){
+			aImg[i].src='images/'+str.charAt(i)+'.png'
+	}
+	
+	}
+};
+</script>
+</head>
+
+<body style="background:#000; text-align:center; padding-top:100px; font-size:50px; color:#fff; font-weight:bold;">
+	<img src="images/2.png" />
+	<img src="images/0.png" />
+	<img src="images/1.png" />
+	<img src="images/5.png" />
+	-
+	<img src="images/0.png" />
+	<img src="images/8.png" />
+	-
+	<img src="images/2.png" />
+	<img src="images/0.png" />
+	<br />
+	<img src="images/0.png" />
+	<img src="images/0.png" />
+	:
+	<img src="images/0.png" />
+	<img src="images/0.png" />
+	:
+	<img src="images/0.png" />
+	<img src="images/0.png" />
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
